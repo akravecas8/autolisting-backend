@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_11_162133) do
+ActiveRecord::Schema.define(version: 2021_07_12_005744) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
-    t.string "base64"
     t.text "description"
     t.string "category"
     t.integer "seller_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "price"
+    t.text "base64"
   end
 
   create_table "sellers", force: :cascade do |t|
